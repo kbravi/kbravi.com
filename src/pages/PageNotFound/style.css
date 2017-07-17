@@ -1,0 +1,5 @@
+.page-not-found-container { padding: 50px; text-align: center;}
+.page-not-found-container img { max-height: 250px; max-width: 100%;}
+.page-not-found-container .text { margin-top: 30px; font-size: 100%;}
+.page-not-found-container .text h1 { font-size: 250%;}
+.page-not-found-container .text a { text-decoration: underline;}

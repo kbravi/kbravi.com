@@ -1,0 +1,28 @@
+.SocialHandles-container{
+  margin: 20px auto;
+  width: 100%;
+  max-width: 250px;
+}
+
+.SocialHandles-item{
+  padding: 10px 0;
+  border-bottom: 1px solid #fff5f5;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.SocialHandles-item:hover{
+  background: #fff5f5;
+}
+
+.SocialHandles-item .item-icon{
+  font-size: 400%;
+  width: 30%;
+  text-align: left;
+}
+
+.SocialHandles-item .item-handle{
+  font-size: 140%;
+  text-align: center;
+}

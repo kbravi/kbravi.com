@@ -1,0 +1,80 @@
+.App {
+  margin: auto;
+  max-width: 940px;
+  font-family: Nunito, "sans-serif";
+  font-size: 14px;
+  padding: 10px;
+}
+
+.App-header {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fdc3bf;
+}
+
+.App-header .App-logo {
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.App-header .App-title-right{
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 200%;
+  opacity: 0.7;
+}
+
+.App-nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.App-nav .App-nav-link{
+  font-size: 130%;
+  text-decoration: none;
+  padding: 5px;
+  color: #a09696;
+  border-radius: 5px;
+}
+
+.App-nav .App-nav-link-active{
+  font-size: 180%;
+  color: #f92a0f;
+}
+
+.App-content{
+  margin-top: 20px;
+}
+
+.App-page{
+  margin: auto;
+}
+
+.App-page .App-page-header{
+  text-align: center;
+  font-weight: bold;
+  max-width: 400px;
+  margin: auto;
+  font-size: 200%;
+}
+
+.App-page .App-page-header img{
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+}
+
+.App-page .App-page-description{
+  text-align: center;
+  font-size: 90%;
+  max-width: 400px;
+  margin: auto;
+  color: #bbb4b4;
+}
