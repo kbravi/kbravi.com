@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Link, NavLink } from 'react-router-dom';
+import { Router, Switch, Route, Link, NavLink } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
 import Icon from 'react-fa';
 import Home from '../../pages/Home';
 import Music from '../../pages/Music';
@@ -12,10 +14,20 @@ import logo from './images/kb_logo_f32f04_transparent_small.png';
 import './style.css';
 import './Nunito.css';
 
+const browserHistory = createBrowserHistory();
+ReactGA.initialize('UA-93766203-1', {debug: true});
+
+const historyListener = (location, action) => {
+  ReactGA.set({ page: location.pathname + location.search });
+  ReactGA.pageview(location.pathname + location.search);
+}
+browserHistory.listen(historyListener);
+historyListener(window.location);
+
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router history={ browserHistory }>
         <div className="App">
           <div className="App-header">
             <Link to="/">
@@ -55,7 +67,7 @@ class App extends React.Component {
             </Switch>
           </div>
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
