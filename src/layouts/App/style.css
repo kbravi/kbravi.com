@@ -78,3 +78,17 @@
   margin: auto;
   color: #bbb4b4;
 }
+
+.CenterText{
+  text-align: center;
+}
+
+.App-list{
+  text-align: left;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.App-list li{
+  margin: 10px auto;
+}

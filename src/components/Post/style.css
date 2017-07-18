@@ -1,0 +1,29 @@
+.Post-container{
+  background: white;
+  box-shadow: 0 1px 1px 0px rgba(0,0,0,0.1);
+  padding: 4%;
+  width: 92%;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 2px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Post-container .Post-header{
+  font-weight: bold;
+  font-size: 165%;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.Post-container .Post-content{
+  margin: 15px 0;
+  font-size: 110%;
+}
+
+.Post-container .Post-footer{
+  border-top: 1px solid rgba(0,0,0,0.1);
+  color: #bdb3b3;
+  font-size: 90%;
+}

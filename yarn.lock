@@ -1720,7 +1720,7 @@ debug@2.6.7:
   dependencies:
     ms "2.0.0"
 
-debug@2.6.8, debug@^2.1.1, debug@^2.2.0, debug@^2.6.0, debug@^2.6.3, debug@^2.6.6, debug@^2.6.8:
+debug@2.6.8, debug@^2.1.1, debug@^2.1.3, debug@^2.2.0, debug@^2.6.0, debug@^2.6.3, debug@^2.6.6, debug@^2.6.8:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.8.tgz#e731531ca2ede27d188222427da17821d68ff4fc"
   dependencies:
@@ -3697,6 +3697,18 @@ jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
 
+jsonp-p@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/jsonp-p/-/jsonp-p-2.0.0.tgz#98de9a1ed70bd16afb33198a701c8729301238a3"
+  dependencies:
+    jsonp "^0.2.0"
+
+jsonp@^0.2.0:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/jsonp/-/jsonp-0.2.1.tgz#a65b4fa0f10bda719a05441ea7b94c55f3e15bae"
+  dependencies:
+    debug "^2.1.3"
+
 jsonpointer@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/jsonpointer/-/jsonpointer-4.0.1.tgz#4fd92cb34e0e9db3c89c8622ecf51f9b978c6cb9"
@@ -4874,7 +4886,7 @@ qs@6.4.0, qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
-query-string@^4.1.0:
+query-string@^4.1.0, query-string@^4.3.4:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
   dependencies:
@@ -4990,6 +5002,13 @@ react-ga@^2.2.0:
     create-react-class "^15.5.2"
     object-assign "^4.0.1"
     prop-types "^15.5.6"
+
+react-instagram-embed@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/react-instagram-embed/-/react-instagram-embed-1.3.1.tgz#b7992f056350c4d5c23ca6d445b5b8ec6c746811"
+  dependencies:
+    jsonp-p "^2.0.0"
+    query-string "^4.3.4"
 
 react-router-dom@^4.1.1:
   version "4.1.1"

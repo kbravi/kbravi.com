@@ -1,0 +1,13 @@
+.Adventure-container{
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.Adventure-container .Adventure-item{
+  display: inline-block;
+  margin: 20px auto;
+  width: 400px;
+  max-width: 100%;
+}

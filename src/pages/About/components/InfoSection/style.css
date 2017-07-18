@@ -1,0 +1,38 @@
+.InfoSection-container{
+  margin: 20px auto;
+}
+.InfoSection-hero-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.InfoSection-hero-container .InfoSection-img{
+  width: 80px;
+  max-height: 90px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.InfoSection-hero-container .InfoSection-header-container{
+  display: block;
+  width: 100%;
+}
+.InfoSection-header-container .InfoSection-header{
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.InfoSection-header-container .InfoSection-subheader{
+  font-size: 120%;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.InfoSection-header-container .InfoSection-subheader .InfoSection-subheader2{
+  font-size: 80%;
+}
+
+.InfoSection-content {
+  margin: 20px auto;
+}

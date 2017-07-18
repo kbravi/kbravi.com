@@ -65,6 +65,18 @@ class Projects extends React.Component {
         content: "Boilerplate application with Rails, React (webpack), Ant Design UI - all set up and ready to go",
         footer: "#Boilerplate #React #Rails"
       },
+      {
+        url: "http://cs229.stanford.edu/proj2013/RavichandranChiassonOyedele%20-%20ClassificationOfElectrocardiogramAnamalies.pdf",
+        header: "ECG Anomalies Detection (ML)",
+        content: "Algorithm to train machines to detect anomalies in ECG - 97.2% accuracy. Uses SVM, Random Forest, PCA, and Kernel optimization",
+        footer: "#MachineLearning #CS229 #MatLab"
+      },
+      {
+        url: "https://e2e.ti.com/group/universityprogram/w/contests/2436.previous-winners#2",
+        header: "Non Invasive Glucometer",
+        content: "Hardware and Firmware that measure blood glucose levels non invasively. Won Texas Instruments Analog Design Contest.",
+        footer: "#Biomedical #C++ #EmbeddedSystems"
+      },
     ]
     return (
       <div className="App-page">

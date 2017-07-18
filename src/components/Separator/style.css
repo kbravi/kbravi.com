@@ -1,0 +1,11 @@
+.Separator{
+  display: block;
+}
+.Separator-line{
+  background: #e4e3e3;
+  height: 1px;
+  width: 60%;
+  margin: auto;
+  text-align: cen;
+  margin: 30px auto;
+}

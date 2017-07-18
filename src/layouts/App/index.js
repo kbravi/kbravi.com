@@ -39,6 +39,9 @@ class App extends React.Component {
             <NavLink exact to="/" className="App-nav-link" activeClassName="App-nav-link-active">
               <Icon name="home"/>
             </NavLink>
+            <NavLink exact to="/about" className="App-nav-link" activeClassName="App-nav-link-active">
+              <Icon name="info-circle"/>
+            </NavLink>
             <NavLink exact to="/projects" className="App-nav-link" activeClassName="App-nav-link-active">
               <Icon name="code"/>
             </NavLink>
@@ -48,9 +51,6 @@ class App extends React.Component {
             <NavLink exact to="/adventure" className="App-nav-link" activeClassName="App-nav-link-active">
               <Icon name="map"/>
             </NavLink>
-            <NavLink exact to="/about" className="App-nav-link" activeClassName="App-nav-link-active">
-              <Icon name="info-circle"/>
-            </NavLink>
             <NavLink exact to="/contact" className="App-nav-link" activeClassName="App-nav-link-active">
               <Icon name="external-link"/>
             </NavLink>
@@ -58,10 +58,10 @@ class App extends React.Component {
           <div className="App-content">
             <Switch>
               <Route exact path="/" render={props => <Home />}/>
+              <Route exact path="/about" render={props => <About />}/>
               <Route exact path="/projects" render={props => <Projects />}/>
               <Route exact path="/music" render={props => <Music />}/>
               <Route exact path="/adventure" render={props => <Adventure />}/>
-              <Route exact path="/about" render={props => <About />}/>
               <Route exact path="/contact" render={props => <Contact />}/>
               <Route path="*" render={props => <PageNotFound />}/>
             </Switch>

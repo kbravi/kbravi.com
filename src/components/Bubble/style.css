@@ -1,0 +1,19 @@
+.Bubble-container{
+  height: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  display: inline-flex;
+  align-items: center;
+  margin: 5px 10px;
+  vertical-align: middle;
+}
+
+.Bubble-container .Bubble-level-indicator{
+  width: 3px;
+  background: #f32f04;
+}
+
+.Bubble-container .Bubble-content{
+  font-size: 110%;
+  padding: 5px;
+  color: #848a91;
+}
