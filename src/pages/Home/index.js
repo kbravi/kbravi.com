@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEmoji from 'react-emoji';
+import ReactEmojiOne from '../../components/ReactEmojiOne';
 import Post from '../../components/Post';
 import './style.css';
 
@@ -13,7 +13,9 @@ class Home extends React.Component {
     return (
       <div className="App-page">
         <div className="App-page-header">
-          { ReactEmoji.emojify("Hello, You! :wave:", {emojiType: "emojione"}) }
+          <ReactEmojiOne>
+            Hello, You! :wave:
+          </ReactEmojiOne>
         </div>
         <div className="App-page-description">
           When life gives you lemons, demand a watermelon instead. <br/>You deserve it.

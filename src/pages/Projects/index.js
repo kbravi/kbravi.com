@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEmoji from 'react-emoji';
+import ReactEmojiOne from '../../components/ReactEmojiOne';
 import Card from '../../components/Card';
 import './style.css'
 
@@ -81,7 +81,9 @@ class Projects extends React.Component {
     return (
       <div className="App-page">
         <div className="App-page-header">
-          { ReactEmoji.emojify("Projects :robot:", {emojiType: "emojione"}) }
+          <ReactEmojiOne>
+            Projects :robot:
+          </ReactEmojiOne>
         </div>
         <div className="App-page-description">Recent projects - software, applications, open source packages and other things</div>
         <div className="Projects-list">

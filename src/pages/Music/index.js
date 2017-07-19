@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEmoji from 'react-emoji';
+import ReactEmojiOne from '../../components/ReactEmojiOne';
 import MusicPlayer from './components/MusicPlayer';
 
 class Music extends React.Component {
@@ -54,7 +54,9 @@ class Music extends React.Component {
     return (
       <div className="App-page">
         <div className="App-page-header">
-          { ReactEmoji.emojify("Music :man_dancing:", {emojiType: "emojione"}) }
+          <ReactEmojiOne>
+            Music :man_dancing:
+          </ReactEmojiOne>
         </div>
         <div className="App-page-description">Sing-alongs and Karaokes. Mostly good, sometimes not so much.</div>
         <MusicPlayer tracks={ songs }/>

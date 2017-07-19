@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactEmoji from 'react-emoji';
-import InstagramEmbed from 'react-instagram-embed'
+import ReactEmojiOne from '../../components/ReactEmojiOne';
+import InstagramEmbed from 'react-instagram-embed';
 import './style.css';
 
 class Adventure extends React.Component {
@@ -13,7 +13,9 @@ class Adventure extends React.Component {
     return (
       <div className="App-page">
         <div className="App-page-header">
-          { ReactEmoji.emojify("Out and About :sunrise_over_mountains:", {emojiType: "emojione"}) }
+          <ReactEmojiOne>
+            Out and About :sunrise_over_mountains:
+          </ReactEmojiOne>
         </div>
         <div className="App-page-description">
           Life is fun with Nature, People and Self.

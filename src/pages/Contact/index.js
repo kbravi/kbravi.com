@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEmoji from 'react-emoji';
+import ReactEmojiOne from '../../components/ReactEmojiOne';
 import SocialHandles from '../../components/SocialHandles';
 
 class Contact extends React.Component {
@@ -63,7 +63,9 @@ class Contact extends React.Component {
     return (
       <div className="App-page">
         <div className="App-page-header">
-          { ReactEmoji.emojify("Get in touch! :hugging:", {emojiType: "emojione"}) }
+          <ReactEmojiOne>
+            Get in touch! :hugging:
+          </ReactEmojiOne>
         </div>
         <div className="App-page-description">Let's talk about products, philosophy, internet, science, music, hiking, running and everything else.</div>
         <SocialHandles handles={ handles } />

@@ -10,13 +10,13 @@ class Bubble extends React.Component {
   render() {
     return (
       <div className="Bubble-container">
-      {
-        this.props.level ?
-        <span className="Bubble-level-indicator" style={ {height: this.props.level} }/> : ""
-      }
-      <span className="Bubble-content">
-        { this.props.children }
-      </span>
+        {
+          this.props.level ?
+          <span className="Bubble-level-indicator" style={ {height: this.props.level} }/> : ""
+        }
+        <span className="Bubble-content">
+          { this.props.children }
+        </span>
       </div>
     )
   }

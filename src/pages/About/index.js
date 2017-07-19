@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEmoji from 'react-emoji';
+import ReactEmojiOne from '../../components/ReactEmojiOne';
 import Post from '../../components/Post';
 import Separator from '../../components/Separator';
 import Bubble from '../../components/Bubble';
@@ -16,7 +16,9 @@ class About extends React.Component {
     return (
       <div className="App-page">
         <div className="App-page-header">
-          { ReactEmoji.emojify("Mea Fabula :blush:", {emojiType: "emojione"}) }
+          <ReactEmojiOne>
+            Mea Fabula :blush:
+          </ReactEmojiOne>
         </div>
         <div className="App-page-description">
           Not so long ago, in a land that is not very far from where you are, it all started....
@@ -163,14 +165,18 @@ class About extends React.Component {
               <InfoSection header="Activities"
                           img="https://s3.amazonaws.com/kbravi/photos/images/activity.png">
                 <div className="EmojiList CenterText">
-                  { ReactEmoji.emojify(":runner: :bicyclist: :mountain_snow: :badminton: :tent: :volleyball: :cricket:", {emojiType: "emojione"}) }
+                  <ReactEmojiOne>
+                    :runner: :bicyclist: :mountain_snow: :badminton: :tent: :volleyball: :cricket:
+                  </ReactEmojiOne>
                 </div>
               </InfoSection>
               <Separator />
               <InfoSection header="Art"
                           img="https://s3.amazonaws.com/kbravi/photos/images/art.png">
                 <div className="EmojiList CenterText">
-                  { ReactEmoji.emojify(":musical_score: :microphone: :musical_keyboard: :clapper: :bread: :salad:", {emojiType: "emojione"}) }
+                  <ReactEmojiOne>
+                    :musical_score: :microphone: :musical_keyboard: :clapper: :bread: :salad:
+                  </ReactEmojiOne>
                 </div>
               </InfoSection>
             </Post>
