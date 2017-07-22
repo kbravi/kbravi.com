@@ -58,6 +58,13 @@ class Contact extends React.Component {
         handle: "@karthikbravi",
         url:"https://twitter.com/karthikbravi",
         color:"#00aced"
+      },
+      {
+        name:"Resume",
+        icon:"download",
+        handle: "Resume",
+        url:"https://s3.amazonaws.com/kbravi/docs/KarthikRavichandranResume.pdf",
+        color:"#f32f04"
       }
     ]
     return (

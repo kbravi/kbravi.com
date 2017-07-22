@@ -25,7 +25,17 @@ class About extends React.Component {
         </div>
         <div className="About-container">
           <div className="About-item">
-            <Post header="Work" footer="#ConnectingTheDots #Startups">
+            <Post header="Me">
+              <ul className="App-list">
+                <li>I love building useful products and leading amazing teams that put people first.</li>
+                <li>I'm a big believer in inspiration, and empathy.</li>
+                <li>I care about things I do, and will do whatever it takes.</li>
+                <li>Here is my <a href="https://s3.amazonaws.com/kbravi/docs/KarthikRavichandranResume.pdf" target="_blank" rel="noopener noreferrer">resume</a></li>
+              </ul>
+            </Post>
+          </div>
+          <div className="About-item">
+            <Post header="Work">
               <InfoSection header="Head of Product & Engineering"
                           img="https://s3.amazonaws.com/kbravi/photos/images/mindsumo_icon.png"
                           subheader1="MindSumo, Inc."
@@ -35,45 +45,38 @@ class About extends React.Component {
                     MindSumo is a best of its kind <strong>crowdsourcing platform</strong> that connects companies and millennials.
                     Companies launch a variety of <strong>challenges</strong> to source ideas, work and insights.
                     Solvers compete in challenges to win prizes, experience, and recognition.
-                    Currently serving about <strong>100 companies in the Fortune 500</strong> list, and over <strong>300,000 millennials</strong>.
+                    MindSumo has served over <strong>100 companies</strong> (including 75 among the Fortune 500), and <strong>2 million users</strong> (including 300,000 registered millennials).
                   </li>
                   <li>
-                    I joined MindSumo as an Engineer (Data and Full Stack) in April 2014.
+                    I joined MindSumo as an Engineer (Data and Full Stack) in 2014.
                     Since August 2015, I have been leading and managing all Product and Engineering efforts.
                   </li>
                   <li>
-                    Grew the solver community <strong>10x in 18 months</strong> (+ a strong y/y user and MAU growth) with strategies
-                    and features including peer referrals, incentive strategies, marketing campaigns, SEO, and conversion optimization.
+                    I developed strategies and led efforts that grew the solver millennial community <strong>10x in 18 months</strong> (+ a strong y/y user and MAU growth).
+                    Peer referrals, incentives, marketing campaigns, SEO, and conversion optimization helped us create a process for growth.
                   </li>
                   <li>
-                    Implemented ways to improve Sales lead generation, enterprise NPS, and overall team efficiency,
-                    which led to company profitability, and a <strong>10% mo/mo bookings growth for 12 months</strong>.
+                    With optimizations and new frameworks to improve sales lead generation, enterprise NPS, and overall team efficiency,
+                    the company became profitable and boasted a strong <strong>10% mo/mo bookings growth for 12 months</strong>.
                   </li>
                   <li>
-                    Designed strategies to increase the number of challenges that a company launches in a year by <strong>50%</strong>.
+                    I designed features and strategies for our enterprise product and client management teams to increase the <strong>number of challenges</strong> that a company launches in a year by <strong>50%</strong>.
                   </li>
                   <li>
-                    Implemented dozens of <strong>successful features for the enterprise</strong> -
+                    I built the software infrastructure, the web, and mobile (iOS & Android) applications,
+                    and implemented dozens of <strong>successful features for the enterprise</strong> -
                     white label product, insights dashboard, submission reviewing, NLP and text analysis,
-                    text highlights, Solver payments, intra-organization referrals, need collection, and third-party integrations.
+                    text highlights, solver payments, intra-organization referrals, need collection, and third-party integrations.
                   </li>
                   <li>
-                    Developed <strong>iOS and Android applications</strong> for MindSumo solvers.
+                    Hired and led engineering, design, and product marketing teams.
                   </li>
                   <li>
-                    Established best practices and frameworks for team-wide accountability,
-                    priority/ goal setting, and collecting customer feedback.
-                  </li>
-                  <li>
-                    Hired and led engineering, and product marketing teams.
-                  </li>
-                  <li>
-                    [current priority] An <strong>end-to-end crowdsourcing platform (AhaKit)</strong>
-                    that integrates into the workflow for consulting and CPG clients.
-                    The platform will be integrated across the organization.
-                    It starts from collecting needs via <strong>'Ahabot'</strong> (now available on slack), qualifying those needs
-                    and launching crowdsourcing challenges across a variety of communities and vendors,
-                    consuming submissions, to extracting insights.
+                    [current priority]  An <strong>end-to-end crowdsourcing platform (AhaKit)</strong>
+                    that integrates into the workflow for consulting and CPG clients
+                    and will help collect and qualify needs, launch challenges,
+                    engage a variety of communities and vendors, collect/consume submissions,
+                    and finally extract useful insights or work. Currently setting up partnerships and pilots.
                   </li>
                 </ul>
               </InfoSection>
@@ -88,26 +91,21 @@ class About extends React.Component {
                   </li>
                   <li>
                     I interned here in Summer 2013 during my Masters at Stanford.
-                    I helped Prophecy Sciences build its <strong>neuroscience based behavioral analysis system</strong> that was used by corporations
-                    and staffing firms to gather more data points about a candidate.
-                    The system includes a hardware unit that measures the user's physiological signals
-                    such as heart rate, skin conductance, and pupil dilation while they take a test
-                    that included logic puzzles, and behavioral profiling exercises.
+                    I helped Prophecy Sciences build its neuroscience based behavioral analysis system
+                    that was used by corporations and staffing firms to gather more data points about a candidate.
                   </li>
                   <li>
-                    Built their entire hardware/ software unit -
-                    sensors, microcontrollers, firmwares, computer interfaces, and housing units.
+                    I built the software/hardware unit - sensors, microcontrollers, firmware, computer interfaces, and housing units.
                   </li>
                   <li>
-                    Helped develop a very interesting ML algorithm
-                    that processed all the data to provide insights and results.
+                    I helped develop the algorithm that powered the insights engine.
                   </li>
                 </ul>
               </InfoSection>
             </Post>
           </div>
           <div className="About-item">
-            <Post header="School" footer="#GreatSchools #100YearOld">
+            <Post header="School">
               <InfoSection header="MS - Electrical Engineering"
                           img="https://s3.amazonaws.com/kbravi/photos/images/stanford_university.png"
                           subheader1="Stanford University"
@@ -136,7 +134,7 @@ class About extends React.Component {
             </Post>
           </div>
           <div className="About-item">
-            <Post header="Interests" footer="#AlwaysLearning">
+            <Post header="Interests">
               <InfoSection header="Skills & Tools"
                           img="https://s3.amazonaws.com/kbravi/photos/images/tools.png">
                 <div className="CenterText">
@@ -182,7 +180,7 @@ class About extends React.Component {
             </Post>
           </div>
           <div className="About-item">
-            <Post header="Places" footer="#BestCities #Beautiful #SoMuchToSee">
+            <Post header="Places">
               <InfoSection header="San Francisco"
                           img="https://s3.amazonaws.com/kbravi/photos/images/san_francisco.jpg"
                           subheader1="California, USA"

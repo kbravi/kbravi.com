@@ -10,15 +10,21 @@ class Post extends React.Component {
   render() {
     return (
       <div className="Post-container">
-        <div className="Post-header">
-          { this.props.header }
-        </div>
+        {
+          this.props.header ?
+          <div className="Post-header">
+            { this.props.header }
+          </div>  : ""
+        }
         <div className="Post-content">
           { this.props.children }
         </div>
-        <div className="Post-footer">
-          { this.props.footer }
-        </div>
+        {
+          this.props.footer ?
+          <div className="Post-footer">
+            { this.props.footer }
+          </div> : ""
+        }
       </div>
     )
   }
