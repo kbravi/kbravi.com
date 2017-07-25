@@ -49,7 +49,7 @@ class About extends React.Component {
                   </li>
                   <li>
                     I joined MindSumo as an Engineer (Data and Full Stack) in 2014.
-                    Since August 2015, I have been leading and managing all Product and Engineering efforts.
+                    Since August 2015, I have been leading and managing all Product, Engineering and B2C Marketing efforts.
                   </li>
                   <li>
                     I developed strategies and led efforts that grew the solver millennial community <strong>10x in 18 months</strong> (+ a strong y/y user and MAU growth).
@@ -65,8 +65,8 @@ class About extends React.Component {
                   <li>
                     I built the software infrastructure, the web, and mobile (iOS & Android) applications,
                     and implemented dozens of <strong>successful features for the enterprise</strong> -
-                    white label product, insights dashboard, submission reviewing, NLP and text analysis,
-                    text highlights, solver payments, intra-organization referrals, need collection, and third-party integrations.
+                     white label offering, insights & submissions review dashboards, NLP, text analysis,
+                     HTML text highlights, solver payments, intra-organization referrals, need collectors, and third-party integrations.
                   </li>
                   <li>
                     Hired and led engineering, design, and product marketing teams.
