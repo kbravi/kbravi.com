@@ -11,6 +11,12 @@ class Projects extends React.Component {
 
   render() {
     const cards= [
+       {
+        url: "https://github.com/kbravi/tic_slack_toe",
+        header: "Tic Slack Toe",
+        content: "Tic Tac Toe game for Slack. Install to any team",
+        footer: "#Slack #Rails #Gaming"
+      },
       {
         url: "https://github.com/kbravi/acts_as_content_highlightable",
         header: "acts_as_content_highlightable",
