@@ -19,6 +19,38 @@ class Music extends React.Component {
         long_description: ""
       },
       {
+        title: "Telephone Punnagai",
+        artist: "Karthik Ravichandran",
+        track_url: "https://s3.amazonaws.com/kbravi/music/telephone_punnagai.mp3",
+        cover_art_url: "https://s3.amazonaws.com/kbravi/photos/mine/azhagiye.jpg",
+        short_description: "#OwnComposition #Garagaband",
+        long_description: ""
+      },
+      {
+        title: "Innum Konja Neram",
+        artist: "Karthik Ravichandran",
+        track_url: "https://s3.amazonaws.com/kbravi/music/innum_konja_neram.mp3",
+        cover_art_url: "https://s3.amazonaws.com/kbravi/photos/stock/winter_yosemite.jpg",
+        short_description: "#ARRahman #Tamil #Karaoke",
+        long_description: ""
+      },
+      {
+        title: "Malare (Premam)",
+        artist: "Karthik Ravichandran",
+        track_url: "https://s3.amazonaws.com/kbravi/music/malare_premam.mp3",
+        cover_art_url: "https://s3.amazonaws.com/kbravi/photos/stock/flowers.jpg",
+        short_description: "#Malare #Malayalam #Karaoke",
+        long_description: ""
+      },
+      {
+        title: "Aaj Ibadat",
+        artist: "Karthik Ravichandran",
+        track_url: "https://s3.amazonaws.com/kbravi/music/aaj_ibadat.mp3",
+        cover_art_url: "https://s3.amazonaws.com/kbravi/photos/stock/winter_yosemite.jpg",
+        short_description: "#BajiraoMastani #Hindi #Karaoke",
+        long_description: ""
+      },
+      {
         title: "Azhagiye",
         artist: "Karthik Ravichandran",
         track_url: "https://s3.amazonaws.com/kbravi/music/azhagiye.mp3",
