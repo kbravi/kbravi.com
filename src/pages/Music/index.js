@@ -23,7 +23,7 @@ class Music extends React.Component {
         artist: "Karthik Ravichandran",
         track_url: "https://s3.amazonaws.com/kbravi/music/telephone_punnagai.mp3",
         cover_art_url: "https://s3.amazonaws.com/kbravi/photos/mine/azhagiye.jpg",
-        short_description: "#OwnComposition #Garagaband",
+        short_description: "#OwnComposition #Garageband",
         long_description: ""
       },
       {
