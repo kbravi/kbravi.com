@@ -36,7 +36,7 @@ class About extends React.Component {
           <div className="About-item">
             <Post header="Work">
               <InfoSection header="Engineer"
-                          img="https://s3.amazonaws.com/kbravi/photos/images/affirm_logo.png"
+                          img="https://s3.amazonaws.com/kbravi/photos/images/affirm_logo.gif"
                           subheader1="Affirm, Inc."
                           subheader2="Nov 2017 - present">
                 <ul className="App-list">
