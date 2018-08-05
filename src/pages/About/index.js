@@ -29,17 +29,27 @@ class About extends React.Component {
               <ul className="App-list">
                 <li>I love building useful products and leading amazing teams that put people first.</li>
                 <li>I'm a big believer in inspiration, and empathy.</li>
-                <li>I care about things I do, and will do whatever it takes.</li>
-                <li>Here is my <a href="https://s3.amazonaws.com/kbravi/docs/KarthikRavichandranResume.pdf" target="_blank" rel="noopener noreferrer">resume</a></li>
+                <li>I care about things I do, and will do whatever it takes.</li>                
               </ul>
             </Post>
           </div>
           <div className="About-item">
             <Post header="Work">
+              <InfoSection header="Engineer"
+                          img="https://s3.amazonaws.com/kbravi/photos/images/affirm_logo.png"
+                          subheader1="Affirm, Inc."
+                          subheader2="Nov 2017 - present">
+                <ul className="App-list">
+                  <li>
+                    I help build Affirm's consumer products, experimentation platform, and metrics pipelines.
+                  </li>
+                </ul>
+              </InfoSection>
+              <Separator />
               <InfoSection header="Head of Product & Engineering"
                           img="https://s3.amazonaws.com/kbravi/photos/images/mindsumo_icon.png"
                           subheader1="MindSumo, Inc."
-                          subheader2="Apr 2014 - present">
+                          subheader2="Apr 2014 - Nov 2017">
                 <ul className="App-list">
                   <li>
                     MindSumo is a best of its kind <strong>crowdsourcing platform</strong> that connects companies and millennials.
@@ -72,7 +82,7 @@ class About extends React.Component {
                     Hired and led engineering, design, and product marketing teams.
                   </li>
                   <li>
-                    [current priority]  An <strong>end-to-end crowdsourcing platform (AhaKit)</strong>
+                    An <strong>end-to-end crowdsourcing platform (AhaKit)</strong>
                     that integrates into the workflow for consulting and CPG clients
                     and will help collect and qualify needs, launch challenges,
                     engage a variety of communities and vendors, collect/consume submissions,
