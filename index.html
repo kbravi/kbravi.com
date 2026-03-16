@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Karthik Ravichandran</title>
+    <link rel="icon" type="image/x-icon" href="/v1/public/favicon.ico">
     <style>
       :root {
         color-scheme: light dark;
@@ -37,101 +38,37 @@
 
       .shell {
         width: 100%;
-        max-width: 940px;
-        border-radius: 28px;
+        max-width: 720px;
+        border-radius: 24px;
         border: 1px solid var(--border);
         box-shadow: var(--shadow-soft);
         background:
-          radial-gradient(circle at top left, rgba(249,115,22,0.16), transparent 55%),
+          radial-gradient(circle at top left, rgba(249,115,22,0.18), transparent 55%),
           radial-gradient(circle at bottom right, rgba(56,189,248,0.12), transparent 55%),
           linear-gradient(145deg, #020617, #020617 55%, #020617);
-        overflow: hidden;
+        padding: 26px 22px 22px;
       }
 
-      .shell-header {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 14px 18px;
-        border-bottom: 1px solid rgba(15,23,42,0.9);
-        background: linear-gradient(180deg, rgba(15,23,42,0.98), rgba(15,23,42,0.94));
+      .name {
+        font-size: clamp(1.8rem, 2.2vw + 1.3rem, 2.3rem);
+        letter-spacing: -0.05em;
+        margin: 0 0 4px;
       }
 
-      .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 999px;
-        background: #f97373;
-      }
-      .dot:nth-child(2) { background: #fbbf24; }
-      .dot:nth-child(3) { background: #22c55e; }
-
-      .shell-title {
-        margin-left: 6px;
-        font-size: 11px;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+      .title {
+        font-size: 0.98rem;
         color: var(--muted);
+        margin-bottom: 16px;
       }
 
-      .content {
-        display: grid;
-        grid-template-columns: minmax(0, 2.1fr) minmax(0, 2fr);
-        gap: 28px;
-        padding: 26px 26px 26px 26px;
-      }
-
-      @media (max-width: 780px) {
-        .content {
-          grid-template-columns: minmax(0, 1fr);
-          padding: 22px 18px 20px;
-        }
-      }
-
-      h1 {
-        font-size: clamp(1.9rem, 2.1vw + 1.2rem, 2.5rem);
-        letter-spacing: -0.04em;
-        margin: 0 0 8px;
-      }
-
-      .tagline {
-        font-size: 0.9rem;
-        color: var(--muted);
-        margin-bottom: 18px;
-      }
-
-      .pill-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 18px;
-      }
-
-      .pill {
-        padding: 5px 10px;
-        border-radius: 999px;
-        border: 1px solid rgba(148,163,184,0.4);
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        color: var(--muted);
-        background: radial-gradient(circle at 0 0, rgba(15,23,42,0.9), rgba(15,23,42,0.6));
-      }
-
-      .pill--accent {
-        border-color: rgba(249,115,22,0.75);
-        color: #fed7aa;
-        background: radial-gradient(circle at 0 0, rgba(249,115,22,0.22), rgba(15,23,42,0.9));
-      }
-
-      .lede {
-        font-size: 0.96rem;
-        line-height: 1.7;
+      .summary {
+        font-size: 0.95rem;
+        line-height: 1.6;
         color: #e5e7eb;
-        margin-bottom: 22px;
+        margin-bottom: 18px;
       }
 
-      .lede strong {
+      .summary strong {
         color: #fed7aa;
         font-weight: 600;
       }
@@ -140,173 +77,112 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+        margin-bottom: 18px;
       }
 
       .btn {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
-        padding: 8px 14px;
+        gap: 6px;
+        padding: 7px 13px;
         border-radius: 999px;
-        font-size: 0.86rem;
+        font-size: 0.84rem;
         font-weight: 500;
         border: 1px solid transparent;
         text-decoration: none;
         color: #0b1120;
         background: linear-gradient(135deg, #fb923c, #f97316);
-        box-shadow: 0 12px 30px rgba(249,115,22,0.55);
+        box-shadow: 0 10px 26px rgba(249,115,22,0.55);
         transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
       }
 
       .btn:hover {
         transform: translateY(-1px);
         filter: brightness(1.03);
-        box-shadow: 0 16px 40px rgba(249,115,22,0.6);
+        box-shadow: 0 14px 34px rgba(249,115,22,0.6);
       }
 
       .btn-secondary {
         background: radial-gradient(circle at 0 0, rgba(15,23,42,0.98), rgba(15,23,42,0.9));
         color: var(--muted);
         border-color: rgba(148,163,184,0.5);
-        box-shadow: 0 10px 30px rgba(15,23,42,0.85);
+        box-shadow: 0 8px 24px rgba(15,23,42,0.85);
       }
 
-      .btn-secondary span {
-        font-size: 0.8rem;
-      }
-
-      .btn-icon {
-        font-size: 1rem;
-      }
-
-      .right {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-      }
-
-      .card {
-        border-radius: var(--card-radius);
-        border: 1px solid rgba(148,163,184,0.4);
-        background:
-          radial-gradient(circle at top, rgba(15,23,42,0.85), rgba(15,23,42,0.95)),
-          linear-gradient(145deg, #020617, #020617);
-        padding: 14px 14px 14px;
-      }
-
-      .card + .card {
-        margin-top: 4px;
-      }
-
-      .card-label {
+      .highlights-label {
         font-size: 0.7rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
         color: var(--muted);
-        margin-bottom: 10px;
+        margin-bottom: 8px;
       }
 
-      .card-body {
-        font-size: 0.88rem;
+      .highlights {
+        font-size: 0.86rem;
         color: #e5e7eb;
         line-height: 1.6;
+        margin: 0;
+        padding-left: 1.1rem;
       }
 
-      .chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        margin-top: 10px;
+      .highlights li {
+        margin-bottom: 0.4rem;
       }
 
-      .chip {
-        border-radius: 999px;
-        border: 1px dashed rgba(148,163,184,0.7);
-        padding: 3px 9px;
-        font-size: 0.74rem;
-        color: var(--muted);
-        background: rgba(15,23,42,0.9);
+      .highlights li:last-child {
+        margin-bottom: 0;
       }
 
-      .subtle {
+      .footnote {
+        margin-top: 16px;
         font-size: 0.75rem;
         color: var(--muted);
-        margin-top: 18px;
       }
 
-      .subtle a {
+      .footnote a {
         color: #fed7aa;
         text-decoration: none;
       }
 
-      .subtle a:hover {
+      .footnote a:hover {
         text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <main class="shell">
-      <header class="shell-header">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="shell-title">kbravi.com • v2</div>
-      </header>
-      <section class="content">
-        <div>
-          <div class="pill-row">
-            <span class="pill pill--accent">hello, you 👋</span>
-            <span class="pill">karthik ravichandran</span>
-          </div>
-          <h1>Builder, tinkerer, occasionally philosophical.</h1>
-          <p class="tagline">
-            I like making useful, playful things on the internet.
-          </p>
-          <p class="lede">
-            When life gives you lemons, demand a watermelon instead.
-            <strong>You deserve it.</strong>
-          </p>
-          <div class="links">
-            <a class="btn" href="mailto:hello@kbravi.com">
-              <span class="btn-icon">✉️</span>
-              <span>Say hi</span>
-            </a>
-            <a class="btn btn-secondary" href="/v1/" >
-              <span class="btn-icon">⏱</span>
-              <span>Visit archived v1 site</span>
-            </a>
-          </div>
-        </div>
-        <div class="right">
-          <article class="card">
-            <div class="card-label">Now</div>
-            <div class="card-body">
-              Shipping small things, learning in public, and trying to keep a healthy
-              ratio of curiosity to certainty.
-              <div class="chips">
-                <span class="chip">software & systems</span>
-                <span class="chip">music</span>
-                <span class="chip">adventures</span>
-              </div>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-label">Elsewhere</div>
-            <div class="card-body">
-              You’ll usually find me where good ideas, good people, and good coffee overlap.
-              <div class="chips">
-                <span class="chip">internet</span>
-                <span class="chip">mountains</span>
-                <span class="chip">some studio somewhere</span>
-              </div>
-            </div>
-          </article>
-          <p class="subtle">
-            The previous React-powered version of this site now lives at
-            <a href="/v1/">/v1</a>.
-          </p>
-        </div>
-      </section>
+      <h1 class="name">Karthik Ravichandran</h1>
+      <p class="title">Entrepreneur & Engineer</p>
+      <p class="summary">
+        I design and build <strong>large‑scale data platforms, infrastructure, and developer tooling</strong> that power ML‑driven products, financial systems of record, and analytics at enterprise scale.
+      </p>
+
+      <div class="links">
+        <a class="btn" href="mailto:karthik@kbravi.com">
+          <span>✉️</span>
+          <span>Email</span>
+        </a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/kbravi" target="_blank" rel="noreferrer">
+          <span>in</span>
+          <span>LinkedIn</span>
+        </a>
+        <a class="btn btn-secondary" href="https://kbravi.s3.us-east-1.amazonaws.com/Karthik_Ravichandran_Resume_2026.pdf" target="_blank" rel="noreferrer">
+          <span>📄</span>
+          <span>Resume (PDF)</span>
+        </a>
+      </div>
+
+      <div class="highlights-label">Selected work</div>
+      <ul class="highlights">
+        <li><strong>Led architecture for Affirm’s centralized data platform</strong> powering ML decision systems, financial pipelines, analytics, and experimentation.</li>
+        <li><strong>Directed platform strategy for a 50+ engineer data infrastructure organization</strong> across storage, warehousing, and data engineering.</li>
+        <li><strong>Co‑founded Woven and built a developer‑native data platform</strong> automating data engineering workflows for enterprises and fast‑growing startups.</li>
+      </ul>
+
+      <p class="footnote">
+        For a full history, see my <a href="https://kbravi.s3.us-east-1.amazonaws.com/Karthik_Ravichandran_Resume_2026.pdf" target="_blank" rel="noreferrer">resume</a> or
+        <a href="https://www.linkedin.com/in/kbravi" target="_blank" rel="noreferrer">LinkedIn</a>.
+      </p>
     </main>
   </body>
 </html>
